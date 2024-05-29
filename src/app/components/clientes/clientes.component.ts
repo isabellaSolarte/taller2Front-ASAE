@@ -13,7 +13,9 @@ export class ClientesComponent implements OnInit{
   
   public clientes: Cliente[]= [];
   public sinDatos: string = 'No hay registros en la BD';
-  constructor(private objClienteService:ClienteService,private router:Router) { }
+  constructor(private objClienteService:ClienteService,private router:Router) { 
+    this.router.navigate(['/clientes']);
+  }
   ngOnInit(): void {
     this.getClientes();
   }

@@ -13,6 +13,7 @@ export class FormComponent implements OnInit {
   constructor(private objService:ClienteService,private router:Router){}
   public cliente: Cliente = new Cliente();
   public titulo: string = 'Crear cliente';
+  public errores:string[] = [];
 
 
   ngOnInit(): void {
