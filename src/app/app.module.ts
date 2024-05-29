@@ -8,19 +8,25 @@ import { HeaderComponent } from './components/header/header.component';
 import { ClienteService } from './components/clientes/cliente.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormComponent } from './components/clientes/form.component';
+import { FormsModule } from '@angular/forms';
+import { NavigationComponent } from './components/navigation/navigation.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponentComponent,
     ClientesComponent,
     HeaderComponent,
-    FormComponent
+    FormComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormComponent
+    FormsModule
   ],
   providers: [ClienteService],
   bootstrap: [AppComponent]
